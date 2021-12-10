@@ -1,0 +1,174 @@
+item1cost=0
+item2cost=0
+START=input ("Welcome SQEGG'S gaming web shop where you can find anything press s to start ")
+START=START.lower()
+while START != ("s"):
+ print ("sorry that is not how you start please press s")
+ START=input ("Welcome SQEGG'S gaming web shop where you can find anything press s to start ")
+if START==("s"):
+ print ("you have entered SQEGG now choose which section you would like to enter ")
+ CHOOSE=input ("press G")
+ CHOOSE=CHOOSE.lower()
+while CHOOSE != ("g"):
+	print ("That is not valid please press g")
+	CHOOSE=input ("press G")
+	
+
+	
+	
+if CHOOSE==("g"):
+	print ("You have entered the gaming section what would you like to buy ")
+	PurchaseG=input ("You can buy headphones (he) Pc (p) gaming chair (gch) gaming mouse (gm) mouse pad (mp) monitor (m) ")
+	
+	
+	
+	
+	
+ 
+if PurchaseG==("p"):
+  print ("you have chosen to buy a pc")
+  item1cost=item1cost+100
+  print ("now you will be returned to the main screen")
+  MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+   
+
+if PurchaseG==("gch"):
+    print ("you have chosen to buy a gaming chair")
+    item1cost=item1cost+125
+    print ("Yo will be returned to the menu now")
+    MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+     
+if PurchaseG==("gm"):
+    print ("You have chosen to buy a gaming mouse")
+    item1cost=item1cost+45
+    print ("You will be returned to the menu now")
+    MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+ 
+    
+  
+if PurchaseG==("mp"):
+    print ("You have chosen to buy a mouse pad")
+    item1cost=item1cost+10
+    print ("You will be returned to the menu now")
+    MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+   
+if PurchaseG==("m"):
+	print ("you have chosen to buy a monitor")
+	item1cost=item1cost+73.50
+	print ("you will now be returnd to the menu")
+	MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+
+if PurchaseG== ("he"):
+	print ("You have chosen to buy a headphone")
+	item1cost=item1cost+36
+	MENU=input ("You are on the main menu page now would you like to pay (pn)or buy more stuff (bms)")
+ 
+	
+PurchaseG=PurchaseG.lower()
+
+if MENU==("pn"):
+	ADD=input ("Where do you want this delevired")
+	name=input ("What is your name")
+	print ("The location you want this delevired is")
+	print (ADD)
+	print ("Your name is")
+	print (name)
+	INFO=input ("What is your credit card security code")
+	while len (INFO) != 3:
+		print ("That is not a valid code")
+		INFO=input ("What is your credit card security code")
+	Ex=input ("When does your credit card expire")
+	while len (Ex) != 4:
+		
+		print ("That is not a valid expirey date")
+		Ex=input ("When does your credit card expire")
+	print ("Here is your receipt ")
+	print (PurchaseG,PurchaseG2)
+
+		
+
+if MENU==("bms"):
+ PurchaseG2=input ("You can buy headphones (he2) Pc (p2) gaming chair (gch2) gaming mouse (gm2) mouse pad (mp2) monitor (m2) ")
+
+if PurchaseG2== ("he2"):
+	print
+	("You have chosen to buy a headphone")
+	MENU=input ("You are on the main menu page now would you like to pay (pn) ")
+	item2cost=item2cost+36
+	
+if PurchaseG2== ("p2"):
+	print
+	("You have chosen to buy a pc")
+	MENU=input ("You are on the main menu page now would you like to pay (pn) ")
+	item2cost=item2cost+100
+
+if PurchaseG2== ("gch2"):
+	print
+	("You have chosen to buy a gaming chair")
+	MENU=input ("You are on the main menu page now would you like to pay (pn)")
+	item2cost=item2cost+125
+
+if PurchaseG2== ("gm2"):
+	print
+	("You have chosen to buy a gaming mouse")
+	MENU=input ("You are on the main menu page now would you like to pay (pn)")
+	item2cost=item2cost+45.69
+
+if PurchaseG2== ("mp2"):
+	print
+	("You have chosen to buy a mouse pad")
+	MENU=input ("You are on the main menu page now would you like to pay (pn)")
+	item2cost=item2cost+36
+
+if PurchaseG2== ("m2"):
+	print
+	("You have chosen to buy a monitor")
+	MENU=input ("You are on the main menu page now would you like to pay (pn)")
+	item2cost=item2cost+36
+	
+if MENU==("pn"):
+	ADD=input ("Where do you want this delevired ")
+	name=input ("What is your name ")
+	print ("The location you want this delevired is",ADD)
+	print ("Your name is",name)
+	INFO=input ("What is your credit card security code  ")
+	while len (INFO) != 3:
+		print ("That is not a valid code")
+		INFO=input ("What is your credit card security code  ")
+	Ex=input ("When does your credit card expire ")
+	while len (Ex) != 4:
+		print ("That is not a valid expirey date")
+		Ex=input ("When does your credit card expire ")
+	print ("""
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&& BANK OF THE SQEGG HEADS
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	        """,name,"""&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"""
+	        ,INFO,"""&&&&&""",Ex,"""&&&&&
+	        """)
+	print ("Here is your receipt ")
+	totalcost= float(item1cost) + float(item2cost)
+	print('Your bill comes to',totalcost)
+	print ("Does this look like your credit card?")
+	
+                                                                       
+	SPEED=input ("Would you like to buy speed delivery? (y or n)")
+	
+	
+
+if SPEED== ("y"):	
+	item1cost=item1cost+15
+	print ("You have purchased speed delivery")
+	totalcost= float(item1cost) + float(item2cost)
+	
+	print ("your total bill is now",totalcost)
+	print ("It will arrive tommorow 8am to 10am")
+	print ("Thank you for shopping with SQEGG browser")
+	
+if 	SPEED== ("n"):
+	print ("us")
