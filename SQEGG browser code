@@ -7,7 +7,7 @@ while START != ("s"):
  START=input ("Welcome SQEGG'S gaming web shop where you can find anything press s to start ")
 if START==("s"):
  print ("you have entered SQEGG now choose which section you would like to enter ")
- CHOOSE=input ("press G")
+ CHOOSE=input ("press G ")
  CHOOSE=CHOOSE.lower()
 while CHOOSE != ("g"):
 	print ("That is not valid please press g")
@@ -151,10 +151,60 @@ if MENU==("pn"):
 	        """,name,"""&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"""
 	        ,INFO,"""&&&&&""",Ex,"""&&&&&
 	        """)
-	print ("Here is your receipt ")
+	print ("This is your credit card")
+	print ("Now here is your receipt ")
 	totalcost= float(item1cost) + float(item2cost)
-	print('Your bill comes to',totalcost)
-	print ("Does this look like your credit card?")
+	print ("""%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%% %%%% %%%% %%%% %%%% %%%% %%%% %%%% %%%% %%%% %%%%#%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                   %&&&&&&&&&&&#                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                && &&&&&&&&&&&&&&&&               #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%               &&& & & &%SQEGG%& & &££            #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%               &&& &&&& #&&%&&&& (&&              #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                &&& #*&.&(%&.&,.&&(               #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                    .&&&&&&&&&                    #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%            @& @@ @   &  @@ *.,@/  . @@ @,        #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                  @ .  &  @  @ &,                 #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                         #        #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                 @.   & @ %       #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   ,,                                  ,          #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   """,PurchaseG,"""        @*   ,%               #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   """,PurchaseG2,"""                             #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   @  m2 or m=Monitor      @.  #  %&#             #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      gch or gch2=Gaming chair                    #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      mp or mp2=mouse pad      *****              #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      p or p2=pc                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      gm or gm2=gaming mouse     @& &*            #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%      he or he2 = headphones                      #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%   Your total bill is  """,totalcost,"""          #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%           /@,                        @,&   &,    #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%            .. ,.                     @     ,     #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%              *              #                    #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%                                                  #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%  %%   %%   %%   %%   %%   %%   %%   %%   %%   %% #%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  /.. ,.   ./*  /                                                     # , #(    
+                                                                               """)
+	        
+	print("The ammount",totalcost,"is now being payed please wait a moment for us to register the money and place your order")
+	print ("....")
+	print ("....")
+	print ("....")
+	print (name,"Your order has been complete and the money has been taken from your account")
 	
                                                                        
 	SPEED=input ("Would you like to buy speed delivery? (y or n)")
@@ -168,7 +218,9 @@ if SPEED== ("y"):
 	
 	print ("your total bill is now",totalcost)
 	print ("It will arrive tommorow 8am to 10am")
-	print ("Thank you for shopping with SQEGG browser")
+	print ("Thank you for shopping with SQEGG browser",name)
 	
 if 	SPEED== ("n"):
-	print ("us")
+	print ("You declined to purchase speed delivery")
+	print ("Your delivery will arive in 2-3 days at 12pm-6pm")
+	print ("Thank you for shopping with SQEGG browser",name)	
